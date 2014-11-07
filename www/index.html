@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>PODCASTS</title>
+    </head>
+    <body>
+        <section id="podPage" class="active">
+            <h2>Podcasts</h2>
+            <ul id="podList">
+            </ul>
+            <a id="download" href="#downloadPage">Download</a>
+
+        </section>
+        <section id="home" class="inactive">
+            <a id="back" href="#podPage">Back</a>
+            <div id="PodcastInfo">
+                <h2 id="Podcast_Title"></h2>
+                <img id="Podcast_image"/>
+                <p id="Podcast_length"></p>
+            </div>
+            <div class="controls">
+                <button id="play">Play</button>
+                <button id="pause">Pause</button>
+                <button id="stop">Stop</button>
+                <button id="fskip">Skip Forward</button>
+                <button id="bskip">Skip Back</button>       
+            </div>   
+        </section>
+        <section id="downloadPage" class="inactive">
+            <a id="back" href="#podPage">Back</a>
+            <div id="download_form">
+                <form>
+                    <input type="Text" id="downText" placeholder="http://feeds.feedburner.com/ThrillingAdventureHour" value="http://feeds.feedburner.com/ThrillingAdventureHour"/>
+                    <input type="submit" id="downPod"/>
+                    <button id="cancel">Cancel</button>
+                </form>
+            </div>
+        </section>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
